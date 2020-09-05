@@ -5,12 +5,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    // Quy tắc khi viết thẻ view
-    // Cách viết 1 : Không chứa thẻ con (/)
-    <TextView />
-    // Cách viết 2 : Chứa thẻ con (Shift + >)
-    <TextView ></TextView>
+    <TextView
+        android:layout_weight="1"
+        android:background="#E1978B"
+        android:textSize="20sp"
+        android:text="View 1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_weight="1"
+        android:background="#60D5A3"
+        android:textSize="20sp"
+        android:text="View 2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
